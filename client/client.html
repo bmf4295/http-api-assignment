@@ -54,12 +54,12 @@
 
       const obj = JSON.parse(xhr.response);
       
-      p.textContent = `Message:${obj.message}`;
+      p.textContent = `Message: ${obj.message}`;
 
     }else if (contentType === 'text/xml'){
 
       const message = xhr.responseXML.querySelector('message').textContent;
-      p.textContent = `Message:${message}`;
+      p.textContent = `Message: ${message}`;
 
     }
 
